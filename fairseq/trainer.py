@@ -88,7 +88,10 @@ class Trainer(object):
 
         # TODO(myleott): support tpu
         if self.cuda and self.data_parallel_world_size > 1:
-            self._grad_norm_buf = torch.DoubleTensor(self.data_parallel_world_size, devide='cuda')
+            self._grad_norm_buf = torch.tensor(
+                [0.0] * self.data_parallel_world_size, dtype=torch.double, device='cuda'
+            )
+
         else:
             self._grad_norm_buf = None
 
