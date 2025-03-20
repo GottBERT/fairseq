@@ -37,21 +37,21 @@ class TestAverageCheckpoints(unittest.TestCase):
     def test_average_checkpoints(self):
         params_0 = collections.OrderedDict(
             [
-                ('a', torch.DoubleTensor([100.0])),
+                ('a', torch.tensor([100.0], dtype=torch.double, device='cuda')),
                 ('b', torch.FloatTensor([[1.0, 2.0, 3.0], [4.0, 5.0, 6.0]])),
                 ('c', torch.IntTensor([7, 8, 9])),
             ]
         )
         params_1 = collections.OrderedDict(
             [
-                ('a', torch.DoubleTensor([1.0])),
+                ('a', torch.tensor([1.0], dtype=torch.double, device='cuda')),
                 ('b', torch.FloatTensor([[1.0, 1.0, 1.0], [1.0, 1.0, 1.0]])),
                 ('c', torch.IntTensor([2, 2, 2])),
             ]
         )
         params_avg = collections.OrderedDict(
             [
-                ('a', torch.DoubleTensor([50.5])),
+                ('a', torch.tensor([50.5], dtype=torch.double, device='cuda')),
                 ('b', torch.FloatTensor([[1.0, 1.5, 2.0], [2.5, 3.0, 3.5]])),
                 # We expect truncation for integer division
                 ('c', torch.IntTensor([4, 5, 5])),

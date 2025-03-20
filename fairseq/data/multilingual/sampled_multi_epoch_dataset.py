@@ -212,7 +212,7 @@ class SampledMultiEpochDataset(SampledMultiDataset):
     def _sync_shard_epoch(self, shard_epoch):
         # in case the ratios are not precisely the same across processes
         # also to ensure every procresses update the ratios in the same pace
-        shard_epoch = torch.DoubleTensor([shard_epoch])
+        shard_epoch = torch.tensor([shard_epoch], dtype=torch.double, device='cuda')
         if torch.distributed.is_initialized():
             if torch.cuda.is_available():
                 distributed_utils.all_reduce(shard_epoch.cuda())
