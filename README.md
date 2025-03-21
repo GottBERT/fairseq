@@ -9,7 +9,7 @@ This is an old version of fairseq which works on TPUv3, TPUv4 and on NVIDIA GPUs
 After checking out the repo, cd into the dir and execute the following commands:
 ```
 pip install .
-pip install tensorboardX pyarrow tokenizers numpy==1.23.5
+pip install tensorboardX pyarrow tokenizers==0.12.1 numpy==1.23.5
 ```
 
 --------------------------------------------------------------------------------
