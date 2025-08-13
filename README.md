@@ -4,13 +4,19 @@ This is an old version of fairseq which works on TPUv3, TPUv4 and on NVIDIA GPUs
 
 ## Installation
 
-**NOTE**: This software was used with Python 3.8 and not tested with newer Python versions, yet.
+**NOTE**: This software was used with **Python 3.8** and not tested with newer Python versions, yet.
 
 After checking out the repo, cd into the dir and execute the following commands:
 ```
 pip install .
-pip install tensorboardX pyarrow tokenizers==0.12.1 numpy==1.23.5
+pip install tensorboardX pyarrow==12.0.1 tokenizers==0.12.1 numpy==1.23.5
 ```
+
+## Pre-training Commands Reference
+
+The commands and scripts used to pre-train RoBERTa models on various platforms are available in the [GottBERT Corpus repository](https://gitlab.com/gottbert/corpus/-/tree/master/pre-training).
+
+
 
 --------------------------------------------------------------------------------
 
