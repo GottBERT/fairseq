@@ -14,7 +14,7 @@ pip install tensorboardX pyarrow==12.0.1 tokenizers==0.12.1 numpy==1.23.5
 
 ## Pre-training Commands Reference
 
-The commands and scripts used to pre-train RoBERTa models on various platforms are available in the [GottBERT Corpus repository](https://gitlab.com/gottbert/corpus/-/tree/master/pre-training).
+The commands and scripts used to pre-train RoBERTa models on various platforms are available in the [RoBERTa Snakemake Pipeline repository](https://github.com/GottBERT/roberta-snakemake-pipeline/tree/master/pre-training).
 
 
 
