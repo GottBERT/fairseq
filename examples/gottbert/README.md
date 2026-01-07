@@ -2,7 +2,7 @@
 
 ## Introduction
 
-[GottBERT](http://arxiv.org/abs/2012.02110) is a pretrained language model trained on 145GB of German text based on RoBERTa.
+[GottBERT](https://aclanthology.org/2024.emnlp-main.1183) is a pretrained language model trained on 145GB of German text based on RoBERTa.
 
 ## Example usage
 
